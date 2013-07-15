@@ -1,0 +1,131 @@
+$iconSpritePath: "../images/glyphicons-halflings.png";
+$iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+/*.hero-unit {
+    margin: 50px auto 0 auto;
+    width: 300px;
+}*/
+
+html {
+    overflow: auto;
+    overflow-y: scroll;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    line-height: 1;
+}
+.container {
+    width: 100%;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+}
+
+section {
+    display: block;
+    color: #ffffff;
+}
+section.pages {
+    box-sizing: border-box;
+    position: relative;
+    padding: 4em 10em 10em 10em;
+    min-height: 100%;
+/*    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    padding: 10em 10em 10em 15em;
+    position: absolute;*/
+}
+
+section.pages {
+    p {
+        margin: 30px 0px;
+    }
+
+    .quotes {
+        float: right;
+        font-size: .9em;
+        font-weight: normal;
+        text-align: right;
+        line-height: 1em;
+
+        .source {
+            display: block;
+            margin-top: 1em;
+            font-size: .8em;
+
+            a {
+                color: #fff; /* 858585 */
+                &:hover { 
+                    color: #fff;
+                    text-decoration: underline;
+                }
+                &:visited { color: #fff; }
+            }
+        }
+        .source:before {
+            content: "―"; /* U2015 */
+        }
+    }
+    .quotes:before {
+        content: "❝"; /* U275D */
+        font-size: 2em;
+    }
+}
+
+.pages-text {
+    line-height: 1.1em;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.pages-text p {
+    max-width: 28em;
+}
+
+#page-1 {
+    background-color: #000000;
+}
+#page-1 h1 {
+    font-size: 4em;
+}
+#page-1 .pages-text {
+    left: 14em; 
+    font-weight: bold;
+}
+#page-1 .pages-text ul {
+    list-style: none;
+    margin-left: 26em;
+    font-size: 1.2em;
+}
+#page-1 .pages-text ul li {
+    line-height: 1.2em;
+}
+
+
+#page-2 {
+    background-color: #B4FF21;
+}
+#page-3 {
+    background-color: #FFD721;
+}
+#page-4 {
+    background-color: #FF6721;
+}
+#page-5 {
+    background-color: #FF2421;
+}
+#page-6 {
+    background-color: #2186FF;
+}
