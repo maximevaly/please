@@ -41,11 +41,11 @@ section.pages {
     position: relative;
     padding: 4em 10em 10em 10em;
     min-height: 100%;
-/*    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    padding: 10em 10em 10em 15em;
-    position: absolute;*/
+}
+@media (max-width: 640px) {
+    section.pages {
+        padding: 2em;
+    }
 }
 
 section.pages {
@@ -113,6 +113,17 @@ section.pages {
 }
 #page-1 .pages-text ul li {
     line-height: 1.2em;
+}
+@media (max-width: 640px) {
+    #page-1 h1 {
+        font-size: 2em;
+    }
+    #page-1 {
+        line-height: 1.2em !important;
+    }
+    #page-1 .pages-text ul {
+        margin-left: 1em;
+    }
 }
 
 
