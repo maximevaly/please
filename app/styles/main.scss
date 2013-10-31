@@ -35,7 +35,6 @@ body {
     line-height: 1;
 
     section {
-        background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.1) 35px, rgba(255,255,255,.1) 70px);
         display: block;
 
         &.pages {
@@ -135,7 +134,7 @@ body {
     .pages {
         color: $txt;
     }
-    #page-1 { background-color: #000000; color: #ffffff; background-image: none;}
+    #page-1 { background-color: #000000; color: #ffffff; }
     #page-2 { background-color: $page2; }
     #page-3 { background-color: $page3; }
     #page-4 { background-color: $page4; }
