@@ -1,129 +1,6 @@
 $iconSpritePath: "../images/glyphicons-halflings.png";
 $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 
-@import 'sass-bootstrap/lib/bootstrap';
-
-/*.hero-unit {
-    margin: 50px auto 0 auto;
-    width: 300px;
-}*/
-
-html {
-    overflow: auto;
-    overflow-y: scroll;
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-}
-
-body {
-    line-height: 1;
-}
-.container {
-    width: 100%;
-}
-
-.content {
-    position: relative;
-    width: 100%;
-}
-
-section {
-    display: block;
-}
-section.pages {
-    box-sizing: border-box;
-    position: relative;
-    padding: 4em 10em 10em 10em;
-    min-height: 100%;
-}
-@media (max-width: 640px) {
-    section.pages {
-        padding: 2em;
-    }
-}
-
-section.pages {
-    p {
-        margin: 30px 0px;
-    }
-
-    .quotes {
-        float: right;
-        font-size: .9em;
-        font-weight: normal;
-        text-align: right;
-        line-height: 1em;
-
-        .source {
-            display: block;
-            margin-top: 1em;
-            font-size: .8em;
-
-            a {
-                color: #000;
-                &:hover { 
-                    color: #000;
-                    text-decoration: underline;
-                }
-                &:visited { color: #000; }
-            }
-        }
-        .source:before {
-            content: "―"; /* U2015 */
-        }
-    }
-    .quotes:before {
-        content: "❝"; /* U275D */
-        font-size: 2em;
-    }
-}
-
-.pages-text {
-    line-height: 1.1em;
-    font-size: 1.6em;
-    font-weight: bold;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.pages-text p {
-    max-width: 28em;
-}
-
-#page-1 h1 {
-    font-size: 4em;
-}
-#page-1 .pages-text {
-    left: 14em; 
-    font-weight: bold;
-}
-#page-1 .pages-text ul {
-    list-style: none;
-    margin-left: 26em;
-    font-size: 1.2em;
-}
-#page-1 .pages-text ul li {
-    line-height: 1.2em;
-}
-@media (max-width: 640px) {
-    #page-1 h1 {
-        font-size: 2em;
-    }
-    #page-1 {
-        line-height: 1.2em !important;
-    }
-    #page-1 .pages-text ul {
-        margin-left: 1em;
-    }
-}
-
-
-
 /* Old palette
 $page2:#B4FF21;
 $page3:#FFD721;
@@ -140,13 +17,128 @@ $page5:#FFA891;
 $page6:#89BABE;
 $txt:#3C2116;
 
-.pages {
-    color: $txt;
+@import 'sass-bootstrap/lib/bootstrap';
+
+html {
+    overflow: auto;
+    overflow-y: scroll;
 }
-#page-1 { background-color: #000000; color: #ffffff; }
-#page-2 { background-color: $page2; }
-#page-3 { background-color: $page3; }
-#page-4 { background-color: $page4; }
-#page-5 { background-color: $page5; }
-#page-6 { background-color: $page6; }
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    line-height: 1;
+
+    section {
+        display: block;
+
+        &.pages {
+            box-sizing: border-box;
+            position: relative;
+            padding: 4em 10em 10em 10em;
+            min-height: 100%;
+
+            p {
+                margin: 30px 0px;
+            }
+
+            .pages-text {
+                line-height: 1.1em;
+                font-size: 1.6em;
+                font-weight: bold;
+                max-width: 1200px;
+                margin: auto;
+
+                p {
+                  max-width: 28em;
+                }
+            }
+
+            .quotes {
+                float: right;
+                font-size: .9em;
+                font-weight: normal;
+                text-align: right;
+                line-height: 1em;
+
+                .source {
+                    display: block;
+                    margin-top: 1em;
+                    font-size: .8em;
+
+                    a {
+                        color: #000;
+                        &:hover { 
+                            color: #000;
+                            text-decoration: underline;
+                        }
+                        &:visited { color: #000; }
+                    }
+                }
+                .source:before {
+                    content: "―"; /* U2015 */
+                }
+            }
+            .quotes:before {
+                content: "❝"; /* U275D */
+                font-size: 2em;
+            }
+
+
+        }
+    }  
+
+    @media (max-width: 640px) {
+        section.pages {
+            padding: 2em;
+        }
+    }
+
+    #page-1 {
+        h1 {
+            font-size: 4em;
+        }
+
+        .pages-text {
+            left: 14em; 
+            font-weight: bold;
+
+            ul {
+                list-style: none;
+                margin-left: 26em;
+                font-size: 1.2em;
+
+                li {
+                    line-height: 1.2em;
+                }
+            }
+        }
+    }
+    @media (max-width: 640px) {
+        #page-1 {
+            line-height: 1.2em !important;            
+            h1 {
+                font-size: 2em;
+            }
+            .pages-text ul {
+                margin-left: 1em;
+            }
+        }
+    }
+
+    .pages {
+        color: $txt;
+    }
+    #page-1 { background-color: #000000; color: #ffffff; }
+    #page-2 { background-color: $page2; }
+    #page-3 { background-color: $page3; }
+    #page-4 { background-color: $page4; }
+    #page-5 { background-color: $page5; }
+    #page-6 { background-color: $page6; }
+}
 
