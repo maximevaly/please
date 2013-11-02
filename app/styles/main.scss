@@ -18,6 +18,7 @@ $page6:#89BABE;
 $txt:#3C2116;
 
 @import 'sass-bootstrap/lib/bootstrap';
+@import url(http://fonts.googleapis.com/css?family=Sintony:400,700);
 
 html {
     overflow: auto;
@@ -33,6 +34,7 @@ body {
 
 body {
     line-height: 1;
+    font-family: 'Sintony', sans-serif;
 
     section {
         display: block;
@@ -133,8 +135,9 @@ body {
 
     .pages {
         color: $txt;
+        word-spacing: .1em;
     }
-    #page-1 { background-color: #000000; color: #ffffff; }
+    #page-1 { background-color: #000000; color: #ffffff; word-spacing: 0em; }
     #page-2 { background-color: $page2; }
     #page-3 { background-color: $page3; }
     #page-4 { background-color: $page4; }
