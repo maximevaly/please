@@ -15,6 +15,7 @@ $page3:#F5E665;
 $page4:#FFC472;
 $page5:#FFA891;
 $page6:#89BABE;
+$page7:#FFFFFF;
 $txt:#3C2116;
 
 @import 'sass-bootstrap/lib/bootstrap';
@@ -143,5 +144,6 @@ body {
     #page-4 { background-color: $page4; }
     #page-5 { background-color: $page5; }
     #page-6 { background-color: $page6; }
+    #page-7 { background-color: $page7; color: #000000; text-align: center; font-size: 2em; }
 }
 
