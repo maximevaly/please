@@ -104,27 +104,38 @@ body {
 
     #page-1 {
         h1 {
+            line-height: 1em;
             font-size: 4em;
         }
-
         .pages-text {
-            left: 14em; 
+            left: 14em;
             font-weight: bold;
-
             ul {
                 list-style: none;
                 margin-left: 26em;
                 font-size: 1.2em;
-
                 li {
-                    line-height: 1.2em;
+                    line-height: 1.0em;
+                    margin-bottom: .2em;
+                }
+            }
+        }
+    }
+    @media (max-width: 1048px) {
+        #page-1 {
+            h1 {
+                font-size: 2em;
+            }
+            .pages-text {
+                ul {
+                    margin-left: 1em;
                 }
             }
         }
     }
     @media (max-width: 640px) {
         #page-1 {
-            line-height: 1.2em !important;            
+            line-height: 1.2em !important;
             h1 {
                 font-size: 2em;
             }
