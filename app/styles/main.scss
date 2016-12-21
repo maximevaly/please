@@ -18,7 +18,10 @@ $page6:#89BABE;
 $page7:#FFFFFF;
 $txt:#3C2116;
 
-@import 'sass-bootstrap/lib/bootstrap';
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
 @import url(http://fonts.googleapis.com/css?family=Sintony:400,700);
 
 html {
@@ -49,7 +52,9 @@ body {
             p {
                 margin: 30px 0px;
             }
-
+img{
+width: 100%;
+}
             .pages-text {
                 line-height: 1.1em;
                 font-size: 1.6em;
