@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "private": true,
   "scripts": {
+    "build": "/bin/cp -rf src dist",
     "serve": "cd src && python3 -m http.server 8000; cd -"
   },
   "dependencies": {
