@@ -1,12 +1,9 @@
 {
-  "name": "please",
-  "version": "1.0.0",
+  "name": "please.dontinterrupt.me",
+  "version": "2.0.0",
   "private": true,
-  "engines": {
-    "node": "6.9.x"
-  },
   "scripts": {
-    "postinstall": "bower install && gulp"
+    "serve": "cd src && python3 -m http.server 8000; cd -"
   },
   "dependencies": {
     "babel-core": "^6.4.0",
